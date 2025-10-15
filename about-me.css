@@ -1,0 +1,90 @@
+*, 
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-primary: rgb(30, 79, 255);
+    --bg-secondary: rgb(255, 255, 139);
+    --bg-third: rgb(219, 202, 202);
+    --txt-primary: #f7f7f7;
+    --txt-secondary: #222222;
+    --txt-third: rgb(243, 243, 99);
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-secondary);
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    /* display: flex; */
+    margin: 10px;
+    height: 200px;
+    width: 350px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px black;
+    animation: fadeInCards 1s ease-in-out;
+}
+
+.btn {
+    /* display: flex; */
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    /* align-items: flex-end; */
+    font-family: "Bitcount Grid Double", system-ui;
+    background-color: var(--bg-primary);
+    color: var(--txt-third);
+    font-size: 20px;
+
+}
+
+.title {
+    /* display: flex; */
+    margin-top: 30px;
+    /* align-content: center; */
+    text-align: center;
+    font-size: 40px;
+    font-family: "Alan Sans", sans-serif;
+}
+
+.description {
+    /* display: flex; */
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: blue;
+    transform: rotate(1.5deg);
+}
+
+@keyframes fadeInCards {
+    from {
+        opacity: 0;
+        /* transform: translateY(-500px); */
+    }
+    to {
+        opacity: 1;
+        /* transform: translateY(0px); */
+    }
+}

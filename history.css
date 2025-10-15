@@ -1,0 +1,120 @@
+*, 
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-primary: rgb(30, 79, 255);
+    --bg-secondary: rgb(255, 255, 139);
+    --bg-third: rgb(219, 202, 202);
+    --txt-primary: #f7f7f7;
+    --txt-secondary: #222222;
+    --txt-third: rgb(243, 243, 99);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-secondary);
+}
+
+.wrapper {
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.content {
+    /* display: flex; */
+    /* position: relative; */
+    position: relative;
+    /* flex-direction: column; */
+    width: 85vw;
+    height: 85vh;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px black;
+    justify-content: flex-start;
+}
+
+#word-title {
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    font-family: "Alan Sans", sans-serif;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    /* margin: 15px; */
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+
+.pict {
+    width: 100vw;
+    border: 1rem solid rgb(0, 170, 255);
+    height: fit-content;
+}
+
+.icons {
+    color: orange;
+    font-size: 70px;
+}
+
+.icons1 {
+    font-size: 70px;
+    color: blue;
+}
+
+.icons2 {
+    font-size: 70px;
+    color: rgb(255, 255, 1);
+}
+
+.paragraph {
+    display: flex;    
+    /* max-height: 150vh; */
+    /* max-width: 150vw; */
+    width: 70%;
+    height: 40%;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 7.5%;
+    top: 27%;
+    /* bottom: -20px; */
+}
+
+.description {
+    /* display: flex; */
+    flex-direction: column;
+    /* padding: 5px; */
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    /* align-items: center; */
+
+}
+
+p {
+    /* display: inline-block; */
+    padding: 8px;
+    text-align: right;
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+}
+
+/* besok merapikan history (font dan padding mungkin) dan lanjut contact
+/* kapan pakai position dan display yang tepat momennya, KAPAN DAN DALAM KONDISI APA ALIGN-ITEMS DKK NYA TIDAK AKAN BEKERJA

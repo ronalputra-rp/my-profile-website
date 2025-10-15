@@ -1,0 +1,164 @@
+*, 
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-primary: rgb(30, 79, 255);
+    --bg-secondary: rgb(255, 255, 139);
+    --bg-third: rgb(219, 202, 202);
+    --txt-primary: #f7f7f7;
+    --txt-secondary: #222222;
+    --txt-third: rgb(243, 243, 99);
+}
+
+.container {
+    min-height: 200vh;
+    /* background-color: var(--bg-secondary); */
+    color: var(--txt-secondary);
+}
+
+.header {
+    height: 700px;
+    padding-left: 60px;
+    background-image: url(wallhaven-y89del_1920x1080.png);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    border-radius: 0px 0px 30px 30px;
+    overflow: hidden;
+    animation: fadeInHeader 1.3s ease-in-out;
+}
+
+.navbar {
+    position: relative;
+    bottom: 5px;
+    display: flex;
+    width: 100%;
+    left: -20px;
+    justify-content: flex-end;
+}
+
+.menu {
+    margin-left: 10px;
+    padding: 15px;
+    margin-right: 10px;
+    color: var(--txt-primary);
+    text-align: right;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+}
+
+.heading {
+    display: flex;
+    position: relative;
+    top: 200px;
+    text-align: left;
+    font-size: 80px;
+    justify-content: flex-start;
+    color: var(--txt-primary);
+    animation: fadeInTitle 1.0s ease-in-out;
+    animation-delay: 1.3s;
+    animation-fill-mode: both;
+
+}
+
+#sub-heading {
+    margin-top: 5px;
+    font-size: 20px;
+    animation: fadeInTitle 1.3s ease-in-out;
+    animation-delay: 1.6s;
+    animation-fill-mode: both;
+}
+
+#sub-heading-2 {
+    font-size: 20px;
+    animation: fadeInTitle 1.3s ease-in-out;
+    animation-delay: 1.6s;
+    animation-fill-mode: both;
+}
+.wrapper {
+    display: grid;
+    margin: 40px;
+    margin-top: 70px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.summary {
+    width: 600px;
+    height: 350px;
+    display: grid;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px black;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.exploring {
+    width: 600px;
+    height: 350px;
+    display: grid;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px black;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+    font-size: 18px;
+    
+}
+
+#sum-title {
+    text-align: center;
+}
+
+#exploring-title {
+    text-align: center;
+}
+
+footer {
+    display: none;
+}
+
+.menu:hover {
+    color: var(--txt-third);
+    transform:scale(1.2);
+}
+
+.summary:hover {
+    transform: scale(1.1) translateX(20px);
+}
+
+.exploring:hover {
+    transform: scale(1.1) translateX(-20px);
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInTitle {
+    from {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* KASIH GAMBAR PADA HEADER, LALU ATUR FOOTER DAN HEIGTH WRAPPER, LALU BUAT PAGE UNTU MASING MASING NAVBAR */
