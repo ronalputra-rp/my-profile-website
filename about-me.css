@@ -50,10 +50,10 @@ html,body {
     cursor: pointer;
     /* align-items: flex-end; */
     font-family: "Bitcount Grid Double", system-ui;
-    background-color: var(--bg-primary);
-    color: var(--txt-third);
+    background-color: rgb(243, 184, 7);
+    color: var(--bg-primary);
     font-size: 20px;
-
+    color: black;
 }
 
 .title {
@@ -62,7 +62,7 @@ html,body {
     /* align-content: center; */
     text-align: center;
     font-size: 40px;
-    font-family: "Alan Sans", sans-serif;
+    font-family: "Fira Sans";
 }
 
 .description {
@@ -70,6 +70,7 @@ html,body {
     margin-top: 10px;
     text-align: center;
     font-size: 18px;
+    font-family: "Concert One", sans-serif;
 }
 
 .btn:hover {
@@ -88,3 +89,50 @@ html,body {
         /* transform: translateY(0px); */
     }
 }
+
+@media screen and (max-width: 1249px) {
+    .container {
+        flex-direction: column;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .card {
+        width: 55vw;
+        height: 25vh;
+    }
+    .btn {
+        height: 3.5rem;
+        margin-top: 1rem;
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+    .title {
+        margin-top: 1em;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        flex-direction: column;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .card {
+        width: 70vw;
+        height: 25vh;
+    }
+    .btn {
+        height: 3.5rem;
+        margin-top: 2rem;
+        padding: 5px;
+        font-size: 1.1rem;
+    }
+    .title {
+        margin-top: 1em;
+        font-size: 2rem;
+    }
+}
+

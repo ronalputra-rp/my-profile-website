@@ -22,47 +22,59 @@ html,body {
 }
 
 .wrapper {
-    /* display: flex; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
 }
 
 .content {
-    /* display: flex; */
-    /* position: relative; */
-    position: relative;
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     width: 85vw;
     height: 85vh;
     background-color: white;
     box-shadow: 2px 2px 2px 2px black;
-    justify-content: flex-start;
+}
+
+.title {
+    justify-content: center;
 }
 
 #word-title {
     text-align: center;
     padding: 10px;
     font-size: 40px;
-    font-family: "Alan Sans", sans-serif;
+    font-family: "Fira Sans";
+}
+
+.description {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    padding: 8px;
+    text-align: left;
+    color: black;
+    font-family: "Concert One", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .logo {
     display: flex;
-    flex-direction: column;
-    /* margin: 15px; */
-    text-align: center;
+    flex-direction: row;
+    padding: 20px;
     justify-content: center;
-    position: relative;
-    top: 30px;
-    left: 10px;
+    align-items: flex-end;
 }
 
 .pict {
     width: 100vw;
-    border: 1rem solid rgb(0, 170, 255);
+    border: 1rem dashed rgb(243, 184, 7);
     height: fit-content;
 }
 
@@ -80,41 +92,3 @@ html,body {
     font-size: 70px;
     color: rgb(255, 255, 1);
 }
-
-.paragraph {
-    display: flex;    
-    /* max-height: 150vh; */
-    /* max-width: 150vw; */
-    width: 70%;
-    height: 40%;
-    justify-content: flex-end;
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    right: 7.5%;
-    top: 27%;
-    /* bottom: -20px; */
-}
-
-.description {
-    /* display: flex; */
-    flex-direction: column;
-    /* padding: 5px; */
-    width: 100%;
-    height: 100%;
-    /* background-color: blue; */
-    /* align-items: center; */
-
-}
-
-p {
-    /* display: inline-block; */
-    padding: 8px;
-    text-align: right;
-    color: black;
-    font-family: "Playfair Display", serif;
-    font-weight: bold;
-}
-
-/* besok merapikan history (font dan padding mungkin) dan lanjut contact
-/* kapan pakai position dan display yang tepat momennya, KAPAN DAN DALAM KONDISI APA ALIGN-ITEMS DKK NYA TIDAK AKAN BEKERJA

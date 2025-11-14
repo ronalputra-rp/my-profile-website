@@ -4,6 +4,7 @@ html,body {
     padding: 0;
 }
 
+
 :root {
     --bg-primary: rgb(30, 79, 255);
     --bg-secondary: rgb(255, 255, 139);
@@ -14,18 +15,90 @@ html,body {
 }
 
 .container {
+    /* background-color: #FFFFFF; */
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
 }
 
 .wrapper {
     display: grid;
-    grid-template-columns: 500px 1fr 350px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 200px;
+    /* align-items: center; */
+    /* grid-template-rows: 250px 200px; */
+    /* align-content: center; */
+    justify-content: center;
+    padding: 20px;
+    margin-top: 10px;
+    gap: 10px;
+    text-align: center;
+    color: #141414;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    color: #f3b807;
+    font-family: "Fira Sans";
+    font-size: 28px;
+    text-transform: uppercase;
+    /* text-shadow: 1px 0.5px rgb(255, 255, 255); */
 }
 
 .content {
-    /* background-color: white; */
-    /* margin: 10px; */
+    /* width: fit-content; */
+    padding: 10px;
+    background-color: white;
+    font-size: 15px;
+    margin: 5px;
+    border-radius: 20px;
+    align-content: center;
+    font-family: "Concert One",sans-serif;
+    font-size: 18px;
 }
 
-/*  */
+#soft-skills {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+}
+
+#bts {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 3;
+}
+
+#achievement {
+    text-align: center;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 3;
+} 
+
+.content-desc {
+    color: #ffc107c9;
+}
+
+
+@media screen and (max-width: 767px) {
+    /* .container {
+        width: 100vw;
+        max-height: 200vh;
+    } */
+    .wrapper {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        height: 50vh;
+        padding: 20px;
+        margin-top: 5px;
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        font-size: 1.5rem;
+    }
+}
+/* mengatur color tiap tiap content,font,letak teks dan mungkin revisi pewarnaan dan mengatur sensitivtas box shadow */

@@ -8,7 +8,7 @@ html,body {
     --bg-primary: rgb(30, 79, 255);
     --bg-secondary: rgb(255, 255, 139);
     --bg-third: rgb(219, 202, 202);
-    --txt-primary: #f7f7f7;
+    --txt-primary: #f3b807;
     --txt-secondary: #222222;
     --txt-third: rgb(243, 243, 99);
 }
@@ -29,15 +29,18 @@ html,body {
     border-radius: 0px 0px 30px 30px;
     overflow: hidden;
     animation: fadeInHeader 1.3s ease-in-out;
+    font-family: "Fira Sans";
 }
 
 .navbar {
-    position: relative;
+    /* position: relative; */
     bottom: 5px;
     display: flex;
+    /* grid-template-columns: 550px 350px 150px ; */
     width: 100%;
-    left: -20px;
+    /* left: -20px; */
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .menu {
@@ -46,7 +49,7 @@ html,body {
     margin-right: 10px;
     color: var(--txt-primary);
     text-align: right;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Concert One", sans-serif;
     font-size: 28px;
 }
 
@@ -61,6 +64,7 @@ html,body {
     animation: fadeInTitle 1.0s ease-in-out;
     animation-delay: 1.3s;
     animation-fill-mode: both;
+    text-shadow: 1px 1px 0.5px black;
 
 }
 
@@ -79,12 +83,14 @@ html,body {
     animation-fill-mode: both;
 }
 .wrapper {
-    display: grid;
-    margin: 40px;
+    display: flex;
+    /* margin: 50px; */
     margin-top: 70px;
-    grid-template-columns: 1fr 1fr;
+    max-width: 100vw;
+    /* grid-template-columns: 1fr 1fr; */
     justify-content: center;
-    column-gap: 15px;
+    /* column-gap: 15px; */
+    gap: 10px;
 }
 
 .summary {
@@ -98,6 +104,7 @@ html,body {
     align-content: center;
     gap: 15px;
     font-size: 18px;
+    font-family: "Concert One",sans-serif;
 }
 
 .exploring {
@@ -111,7 +118,7 @@ html,body {
     align-content: center;
     gap: 15px;
     font-size: 18px;
-    
+    font-family: "Concert One",sans-serif;
 }
 
 #sum-title {
@@ -128,7 +135,7 @@ footer {
 
 .menu:hover {
     color: var(--txt-third);
-    transform:scale(1.2);
+    transform:scale(1.1);
 }
 
 .summary:hover {
@@ -161,4 +168,57 @@ footer {
     }
 }
 
-/* KASIH GAMBAR PADA HEADER, LALU ATUR FOOTER DAN HEIGTH WRAPPER, LALU BUAT PAGE UNTU MASING MASING NAVBAR */
+@media screen and (max-width: 768px) {
+    .container {
+        /* display: flex; */
+        width: 100vw;
+        height: 100vh;
+        /* flex-direction:  */
+    }
+    .header {
+        /* width: 90vw; */
+        background-size: 100vw;
+    }
+    .navbar {
+        left: -3vw;
+    }
+    .menu {
+        text-align: left;
+    }
+    .heading {
+        top: 23vh;
+    }
+    #sub-heading,#sub-heading-2 {
+        margin-left: 5px;
+        text-align: left;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        /* grid-template-columns: 1fr; */
+        /* gap: 15px; */
+        padding: 30px;
+        max-width: 100vw;
+    }
+    .summary {
+        width: 95%;
+        height: 40vh;
+        /* height: 100vh; */
+    }
+    .exploring {
+        width: 95%;
+        height: 30vh;
+    }
+    .summary:hover {
+        transform: scale(1.1);
+    }
+    .exploring:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* revisi summary dan exploring dan make sure semua sudah responsive */
+/* revisi navbar peletakan grid */
